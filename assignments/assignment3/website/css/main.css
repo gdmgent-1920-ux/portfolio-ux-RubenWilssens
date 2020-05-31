@@ -1,0 +1,618 @@
+@charset "utf-8";
+/* ================================= */
+/* --------- TYPOGRAPHY CSS -------- */
+/* ================================= */
+
+body{
+  color:#707070;
+  font-family:'Avenir';
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin:0;
+  padding:0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: 700;
+}
+button:focus {
+	outline:none;
+	outline:none -webkit-focus-ring-color;
+}
+
+a,
+button,
+a:focus,
+a:hover,
+button:focus,
+button:hover{
+  text-decoration: none;
+  transition: ease all 0.5s;
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+}
+ul,ol{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style:none;
+}
+img,.img{
+  max-width:100%;
+}
+
+
+/* ================================= */
+/* ----------- General CSS --------- */
+/* ================================= */
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  cursor: pointer;
+}
+.form-control {
+	box-shadow: none !important;
+	border-radius:0;
+}
+.form-icon{
+  position: relative;
+}
+.form-icon span {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
+/*** Heading ***/
+.heading{
+	margin-bottom:50px;
+}
+.heading h2{
+  font-size:36px;
+  color:#3AA4BF;
+  text-transform: uppercase;
+  display: block;
+  
+}
+.heading span{
+  display: block;
+  
+}
+
+/*** Button ***/
+.blue-btn {
+	display: inline-block;
+	background: #015AB2;
+	color: #fff;
+	padding:6px 40px;
+	font-weight: 400;
+	line-height: normal;
+	border-radius: 3px;
+}
+.blue-btn:hover,
+.blue-btn:focus{
+	box-shadow:0 0 15px 0 rgba(0,0,0,0.3);
+	color:#fff;
+}
+
+.blue-btn-border {
+	display:inline-block;
+	color:#0747A6;
+	padding:5px 40px;
+	font-weight: 400;
+	line-height: normal;
+	border-radius: 3px;
+	border:1px solid #0747A6;
+}
+.blue-btn-border:hover,
+.blue-btn-border:focus{
+	box-shadow:0 0 15px 0 rgba(0,0,0,0.3);
+	color:#0747A6;
+}
+
+/* ================================= */
+/* ---------- Header CSS ----------- */
+/* ================================= */
+#header{
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.7);
+	z-index: 10;
+	position: relative;
+}
+#header .navbar{
+	padding:0;
+}
+
+#header .navbar .navbar-brand {
+	max-width: 130px;
+	margin: 0 50px 0 0;
+}
+
+#header .navbar .nav-item .nav-link {
+	border-radius: 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #707070;
+	position: relative;
+	padding: 40px 5px;
+	margin: 0 30px;
+}
+
+#header .navbar .nav-item .nav-link::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 20px;
+	background: #707070;
+	right: -30px;
+	top: 45px;
+}
+
+#header .navbar .nav-item:last-child .nav-link::after {
+	display: none;
+}
+
+#header .navbar .nav-item .nav-link:before {
+	content: "";
+	position: absolute;
+	width:0;
+	height:20px;
+	background: #3AA4BF;
+	right:0;
+	left:0;
+	bottom:0;
+	margin:0 auto;
+	transition: ease all 0.5s;
+	-webkit-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+}
+
+#header .navbar .nav-item .nav-link.active:before,
+#header .navbar .nav-item .nav-link:hover:before,
+#header .navbar .nav-item .nav-link:focus:before {
+	width:100%;
+}
+#header .navbar .nav-item .nav-link.active,
+#header .navbar .nav-item .nav-link:hover,
+#header .navbar .nav-item .nav-link:focus{
+	color:#3AA4BF;
+}
+
+#header .navbar .nav-link.active, 
+#header .navbar .show > .nav-link {
+	background-color: transparent;
+}
+
+/* ================================= */
+/* ---------- Banner CSS ----------- */
+/* ================================= */
+#main-banner .item{
+	position: relative;
+}
+#main-banner .item{
+	position: relative;
+}
+#main-banner .item img{
+	width:100%;
+}
+#main-banner .item .overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.owl-nav .owl-prev, 
+.owl-nav .owl-next {
+	border: 2px solid #fff;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 50px;
+	width: 45px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+.owl-nav .owl-prev{
+	left:0;
+}
+.owl-nav .owl-next{
+	right:0;
+}
+
+/**** Inner Banner ****/
+.inner-banner {
+	background: url(../images/innaer.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 30px 0;
+}
+.inner-banner .heading{
+	margin-bottom: 0;
+}
+.inner-banner .heading span {
+	max-width: 230px;
+	margin: 0 auto;
+}
+.inner-banner .heading h2{
+	color: #fff;
+}
+
+/* ================================= */
+/* --------- About Us CSS ---------- */
+/* ================================= */
+.about-us {
+	padding:60px 0 90px 0;
+	position: relative;
+}
+.about-us p {
+	font-size: 18px;
+	line-height: 34px;
+}
+.boy-img {
+	position: absolute;
+	right: -133px;
+	top: -184px;
+	z-index: 1;
+}
+.about-div {
+	max-width: 540px;
+	margin: 0 auto;
+}
+.worker-img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	max-width: 250px;
+}
+.worker-img img,
+.boy-img img, .lefter-img img{
+	width:100%;
+}
+.about-lefter {
+	position: relative;
+	margin-bottom: 90px;
+}
+.about-lefter .border-thin {
+	width: 1px;
+	height: 100%;
+	display: inline-block;
+	background: #bdbcbc;
+	position: absolute;
+	left: 50%;
+	margin-left: 40px;
+	top: 0; bottom: 0;
+}
+.about-lefter h2 {
+	font-size: 30px;
+	color: #3AA4BF;
+	margin: 30px 0 0 0;
+}
+.digit-list {
+	padding-left: 15px;
+}
+.digit-list li {
+	list-style: decimal;
+	color: #2C7588;
+	font-size: 18px;
+	line-height: 34px;
+}
+
+
+/* ================================= */
+/* --------- Example Renovation CSS ---------- */
+/* ================================= */
+.example-renovation {
+	background: url(../images/example-bg.png) no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: center center;
+	padding: 90px 0 110px 0;
+}
+.example-renovation .example-img > img {
+	width: 100%;
+	margin: 40px 0 0 0;
+}
+.example-renovation .btn-moring {
+	display: inline-block;
+	background: #fff;
+	color: #2C7588;
+	margin: 40px 0;
+	padding: 5px 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.example-renovation .btn-moring:hover,
+.example-renovation .btn-moring:focus {
+	background: #2C7588;
+	color: #fff;
+}
+
+
+/* ================================= */
+/* --------- Services CSS ---------- */
+/* ================================= */
+.services {
+	padding: 0 0 50px 0;
+}
+
+.service-box{
+	position: relative;
+	z-index:1;
+	margin-bottom: 5px;
+}
+.service-box img{
+	width:100%;
+}
+.box-overlay {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+}
+.box-overlay h4 a{
+	color:#fff;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.service-box:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	top:0;
+	height:100%;
+	width:100%;
+	background: rgba(0,0,0,0.7);
+}
+
+/* ================================= */
+/* ---------- Footer CSS ----------- */
+/* ================================= */
+#footer {
+	background: url(../images/footer-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 150px 0 50px 0;
+	margin: -90px 0 0 0;
+}
+.footer-tube {
+	max-width: 370px;
+	position: absolute;
+	top: 0;
+	left: -120px;
+	z-index:2;
+}
+#footer .row {
+	justify-content: center;
+}
+.footer-box {
+	position: relative;
+	z-index: 5;
+}
+.footer-box h4 {
+	margin-bottom: 10px;
+	font-size: 28px;
+}
+.footer-box h4, .footer-box p,
+.footer-box .footer-list li a {
+	color:#fff;
+}
+.footer-box .footer-list li a {
+	padding:5px 0;
+}
+.footer-box .footer-list li a,
+.footer-social li  {
+	display: inline-block;
+}
+
+.footer-social li {
+	margin: 10px 10px 0 0;
+}
+.footer-box p{
+	margin:5px 0;
+}
+
+/* ================================= */
+/* ------ Holiday Feeling CSS ------ */
+/* ================================= */
+.holiday-feeling{
+	padding:100px 0;
+}
+.holiday-feeling-img img{
+	width:100%;
+	margin-bottom: 15px;
+}
+.holiday-feeling-detail h4 {
+	font-size: 24px;
+	color: #3AA4BF;
+	margin-bottom:15px;
+}
+.holiday-feeling-detail a {
+	background: #3AA4BF;
+	display: inline-block;
+	color: #fff;
+	padding: 5px 30px;
+	letter-spacing: 1px;
+	margin: 15px 0;
+}
+.holiday-feeling-detail p {
+	line-height: 25px;
+}
+
+/* ================================= */
+/* --------- Portfolio CSS --------- */
+/* ================================= */
+.portfolio-panel{
+	background: url(../images/portfolio-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 150px 0 100px 0;
+}
+
+.portfolio-panel-btn {
+	background: #3AA4BF;
+	display: block;
+	color: #fff;
+	padding: 5px 30px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 270px;
+	font-size: 20px;
+}
+.portfolio-panel-btn:hover,
+.portfolio-panel-btn:focus{
+	color: #fff;
+}
+.portfolio-menu ul {
+	margin-bottom:40px;
+}
+.portfolio-menu .dropdown.hide-desktop{
+	display:none;
+}
+.portfolio-menu ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 18px;
+	cursor: pointer;
+	color: #2C7588;
+	position: relative;
+	padding:10px 0;
+	margin:0 10px;
+}
+.portfolio-menu ul li::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 18px;
+	background: #2C7588;
+	top:15px;
+	right: -12px;
+}
+.portfolio-menu ul li:last-child:after {
+	display: none;
+}
+.portfolio-menu ul li::before {
+	content: "";
+	position: absolute;
+	width:0;
+	height:2px;
+	background: #2C7588;
+	bottom: 9px;
+	right: 0;
+	left:0;
+	margin:0 auto;
+	transition: ease all 0.5s;
+	-webkit-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+}
+.portfolio-menu ul li.active:before,
+.portfolio-menu ul li:hover:before,
+.portfolio-menu ul li:focus:before {
+	width:100%;
+}
+.portfolio-item.row {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.portfolio-item .item.col-lg-4.col-md-6 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.portfolio-card {
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.card-detail {
+	background: #2C7588;
+	padding: 10px;
+}
+.card-detail h5 a{
+	color:#fff;
+	display: inline-block;
+}
+.card-detail p{
+	color:#D0D0D0;
+}
+
+/****/
+.portfolio-menu .dropdown {
+	position: relative;
+}
+  
+.portfolio-menu .dropdown .caption {
+	background-color: #f2f2f2;
+	padding: 11px 15px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #2C7588;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.portfolio-menu .dropdown .caption::after {
+	position: absolute;
+	content: "\f0dd";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	right: 10px;
+	top: 7px;
+}
+.portfolio-menu .dropdown .list {
+	position: absolute;
+	background-color: #f2f2f2;
+	width: 100%;
+	border-radius: 0 0 3px 3px;
+	display: none;
+}
+  
+.portfolio-menu .dropdown .list .item {
+	padding: 11px 24px;
+	cursor: pointer;
+}
+  
+.portfolio-menu .dropdown .caption:hover,
+.portfolio-menu .dropdown .list .item:hover {
+	background-color: rgb(83, 161, 214);
+	color: #fff;
+}
+  
+.portfolio-menu .dropdown.open .caption {
+	border-radius: 3px 3px 0 0;
+	border-bottom: solid 1px #999;
+}
+  
+.portfolio-menu .dropdown.open .list {
+	display: block;
+}
