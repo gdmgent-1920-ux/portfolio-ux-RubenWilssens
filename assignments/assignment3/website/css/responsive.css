@@ -1,0 +1,105 @@
+
+/* ================================= */
+/* --------- Responsive CSS -------- */
+/* ================================= */
+@media (max-width: 1080px) and (min-width: 768px) {
+}
+
+@media (max-width:1300px) and (min-width: 992px) {
+}
+
+@media (max-width: 1439px) {
+}
+ 
+@media (max-width: 991px) {
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    #header .navbar .navbar-brand {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    .navbar-toggler {
+        margin:20px 0;
+        font-size: 40px;
+    }
+    #header .navbar .nav-item .nav-link::after,
+    #header .navbar .nav-item .nav-link::before{
+        display: none;
+    }
+    .navbar-toggler {
+        margin: 20px 0;
+        font-size: 40px;
+        color: #707070;
+    }
+    #header .navbar .nav-item .nav-link {
+        padding: 15px 0;
+        margin: 0;
+    }
+    .boy-img,.worker-img {
+        display: none;
+    }
+    .about-lefter h2 {
+        font-size: 20px;
+    }
+    .digit-list li {
+        font-size: 15px;
+    }
+    
+    .footer-box {
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+    .footer-tube {
+        max-width: 250px;
+    }
+    .heading h2 {
+        font-size: 23px;
+    }
+    .heading span {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+    .services .container {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .portfolio-menu .dropdown.hide-desktop {
+        display: block;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 5;
+    }
+    .portfolio-menu ul li {
+        display: block;
+    }
+    .portfolio-menu ul li::before,
+    .portfolio-menu ul li::after{
+        display: none;
+    }
+    .portfolio-panel {
+        padding: 30px 0 50px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-lefter .border-thin {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .example-renovation .custom-cols .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+           -moz-box-flex: 0;
+                flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
